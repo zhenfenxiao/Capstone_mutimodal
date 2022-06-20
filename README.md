@@ -38,6 +38,11 @@ Just to make sure there are three files in `data/processed`:
 * data.hdf5 
 * part_of_ehr.csv 
 
+## For Windows User
+
+* The path in train.sh and test.sh have to be windows-style. 
+* The path in `read_pkl.py`,`./scripts/create_pe_hdf5_update.py` and  `generate_ehr.py` have to be windows-style.
+* Go to `datasets/ct_pe_dataset_3d.py` and find `_load_volume()` to see the comment in that function.
 
 ### Pretrained model
 
@@ -47,6 +52,8 @@ Our model has two parts: PENet and Elasticnet. I know you have the penet_best.pt
 
 To train the fusion model, run `sh train.sh`. After the training is finished, the trained model is stored at `./train_logs`. 
 To test the model, modify the `ckpt_path` in test.sh and run `sh test.sh`
+
+
 
 
 If you choose to use all the CT data, 
