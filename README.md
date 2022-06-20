@@ -21,7 +21,7 @@ The pacakges required are list below and the version is the lastest.
 
 ### Data Preparation
 
-CT data and EHR records can be downloaded [here](https://stanfordaimi.azurewebsites.net/datasets/ 3a7548a4-8f65-4ab7-85fa-3d68c9efc1bd.)   
+CT data and EHR records can be downloaded [here](https://stanfordaimi.azurewebsites.net/datasets/3a7548a4-8f65-4ab7-85fa-3d68c9efc1bd.)   
 
 If you choose to use only part of the CT data, 
 
