@@ -206,7 +206,11 @@ class CTPEDataset3d(BaseCTDataset):
             raise NotImplementedError('No support for PNGs in our HDF5 files.')
 
         with h5py.File(os.path.join(self.data_dir, 'data.hdf5'), 'r') as hdf5_fh:
-            volume = hdf5_fh[str(ctpe.study_num)][start_idx:start_idx + self.num_slices]
+            
+            key=str(ctpe.study_num)
+            #fow windows :
+            #key=self.data_dir+str(ctpe.study_num)
+            volume = hdf5_fh[key][start_idx:start_idx + self.num_slices]
 
         return volume
 
