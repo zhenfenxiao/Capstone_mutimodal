@@ -135,7 +135,7 @@ class CTPEDataset3d(BaseCTDataset):
                   'series_idx': ctpe_idx}
         
         ehr_id=ctpe.study_num
-        ehr=self.all_ehr[self.all_ehr['idx']==ehr_id].drop(labels=['idx'],axis=1).to_numpy()
+        ehr=self.all_ehr[self.all_ehr['idx']==ehr_id].drop(labels=['idx','Unnamed: 0'],axis=1).to_numpy()
 
         ehr_data=torch.from_numpy(ehr)
         ehr_data=ehr_data.to(torch.float32)
