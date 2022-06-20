@@ -26,12 +26,11 @@ The pacakges required are list below and the version is the lastest.
 CT data and EHR records can be downloaded [here](https://stanfordaimi.azurewebsites.net/datasets/3a7548a4-8f65-4ab7-85fa-3d68c9efc1bd.)   
 
 If you choose to use only part of the CT data, 
-
-* put the .npy files into the directory `data/raw`
-* put the .csv files into `data/`
-* *Generate .pkl file for the part of data we choose:*    modify the list part_of_study in `read_pkl.py`: fill the list with 'idx' of the data you choose and run `python read_pkl.py`, then a file named `series_list.pkl` will appear in `data/processed`
-* *Generate hdf5 file for the part of data we choose:*    run `python ./scripts/create_pe_hdf5_update.py` to generate data.hdf5 file under the directory `data/processed` (
-* *Generate combined EHR record for the part of data we choose:*    modify the list part_of_study in `generate_ehr.py`:fill the list with 'idx' of the data you choose and run `python generate_ehr.py`, then a file named part_of_ehr.csv will appear in `data/processed`
+1. put the .npy files into the directory `data/raw`
+2. put the .csv files into `data/`
+3. *Generate .pkl file for the part of data we choose:*    modify the list part_of_study in `read_pkl.py`: fill the list with 'idx' of the data you choose and run `python read_pkl.py`, then a file named `series_list.pkl` will appear in `data/processed`
+4. *Generate hdf5 file for the part of data we choose:*    run `python ./scripts/create_pe_hdf5_update.py` to generate data.hdf5 file under the directory `data/processed` (
+5. *Generate combined EHR record for the part of data we choose:*    modify the list part_of_study in `generate_ehr.py`:fill the list with 'idx' of the data you choose and run `python generate_ehr.py`, then a file named part_of_ehr.csv will appear in `data/processed`
 
 Just to make sure there are three files in `data/processed`:
 * series_list.pkl
