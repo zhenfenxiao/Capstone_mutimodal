@@ -27,9 +27,9 @@ If you choose to use only part of the CT data,
 
 * put the .npy files into the directory `data/raw`
 * put the .csv files into `data/`
-* Generate .pkl file for the part of data we choose:    modify the list part_of_study in `read_pkl.py`: fill the list with 'idx' of the data you choose and run `python read_pkl.py`, then a file named `series_list.pkl` will appear in `data/processed`
-* Generate hdf5 file for the part of data we choose:    run `python ./scripts/create_pe_hdf5_update.py` to generate data.hdf5 file under the directory `data/processed` (
-* Generate combined EHR record for the part of data we choose:    modify the list part_of_study in `generate_ehr.py`:fill the list with 'idx' of the data you choose and run `python generate_ehr.py`, then a file named part_of_ehr.csv will appear in `data/processed`
+* *Generate .pkl file for the part of data we choose:*    modify the list part_of_study in `read_pkl.py`: fill the list with 'idx' of the data you choose and run `python read_pkl.py`, then a file named `series_list.pkl` will appear in `data/processed`
+* *Generate hdf5 file for the part of data we choose:*    run `python ./scripts/create_pe_hdf5_update.py` to generate data.hdf5 file under the directory `data/processed` (
+* *Generate combined EHR record for the part of data we choose:*    modify the list part_of_study in `generate_ehr.py`:fill the list with 'idx' of the data you choose and run `python generate_ehr.py`, then a file named part_of_ehr.csv will appear in `data/processed`
 
 
 ### Pretrained model
