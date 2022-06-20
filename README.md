@@ -21,6 +21,12 @@ The pacakges required are list below and the version is the lastest.
 
 (There must be some other packages but I am too lazy to list them here.....)
 
+## For Windows User
+
+* The path in train.sh and test.sh have to be windows-style. 
+* The path in `read_pkl.py`,`./scripts/create_pe_hdf5_update.py` and  `generate_ehr.py` have to be windows-style.
+* Go to `datasets/ct_pe_dataset_3d.py` and find `_load_volume()` to see the comment in that function.
+
 ### Data Preparation
 
 CT data and EHR records can be downloaded [here](https://stanfordaimi.azurewebsites.net/datasets/3a7548a4-8f65-4ab7-85fa-3d68c9efc1bd.)   
@@ -37,11 +43,7 @@ Just to make sure there are three files in `data/processed`:
 * data.hdf5 
 * part_of_ehr.csv 
 
-## For Windows User
 
-* The path in train.sh and test.sh have to be windows-style. 
-* The path in `read_pkl.py`,`./scripts/create_pe_hdf5_update.py` and  `generate_ehr.py` have to be windows-style.
-* Go to `datasets/ct_pe_dataset_3d.py` and find `_load_volume()` to see the comment in that function.
 
 ### Pretrained model
 
