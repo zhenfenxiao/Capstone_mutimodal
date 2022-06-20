@@ -76,7 +76,7 @@ class BaseArgParser(object):
                                  help='If True, perform classification.')
         self.parser.add_argument('--pe_types', type=eval, default='["central", "segmental"]',
                                  help='Types of PE to include.')
-        self.parser.add_argument('--ehr_dim', type=int, default=2912,
+        self.parser.add_argument('--ehr_dim', type=int, default=2911,
                                  help='dim of ehr data.')
         self.is_training = None
 
