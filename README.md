@@ -2,8 +2,8 @@
 
 This is the pytroch implementation for the paper:
 >RadFusion: Benchmarking Performance and Fairness for Multimodal Pulmonary Embolism Detection from CT and EHR. [Paper in arXiv](https://arxiv.org/abs/2111.11665).
- 
-The code is adapted from this [repo](https://github.com/marshuang80/penet). (Code for PENet)
+
+
 
 
 
