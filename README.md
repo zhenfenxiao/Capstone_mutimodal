@@ -3,7 +3,12 @@
 This is the pytroch implementation for the paper:
 >RadFusion: Benchmarking Performance and Fairness for Multimodal Pulmonary Embolism Detection from CT and EHR. [Paper in arXiv](https://arxiv.org/abs/2111.11665).
 
+## Outline
 
+Pulmonary Embolism auto detection from CT data and Electronic Health Records.  
+* data: the CT images and EHR data should be put under this directory.
+* dataset: custom dataset/dataloader class (inherited from Dataset/Dataloader).
+* models: PENet (a CNN model) and Fusion model.(A vision transformer model is going to be uploaded).
 
 
 
